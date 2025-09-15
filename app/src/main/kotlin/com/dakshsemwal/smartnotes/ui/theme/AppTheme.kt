@@ -1,4 +1,4 @@
-package com.dakshsemwal.smartnotes
+package com.dakshsemwal.smartnotes.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable

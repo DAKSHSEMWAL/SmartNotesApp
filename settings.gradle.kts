@@ -1,14 +1,9 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
         mavenCentral()
         gradlePluginPortal()
+        google()
     }
 }
 dependencyResolutionManagement {
@@ -18,7 +13,8 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 rootProject.name = "SmartNotes"
 include(":app")
- 
+include(":domain")
+include(":data")
