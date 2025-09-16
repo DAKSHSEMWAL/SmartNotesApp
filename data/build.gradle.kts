@@ -2,8 +2,6 @@ import com.dakshsemwal.smartnotes.Config
 
 plugins {
     alias(libs.plugins.daksh.smartnotes.library)
-    alias(libs.plugins.hilt)
-    alias(libs.plugins.ksp)
 }
 
 android {

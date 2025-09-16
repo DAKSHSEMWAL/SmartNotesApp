@@ -16,6 +16,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
                 apply(libs.findPlugin("kotlin-android").get().get().pluginId)
                 apply(libs.findPlugin("ksp").get().get().pluginId)
                 apply(libs.findPlugin("compose-compiler").get().get().pluginId)
+                apply(libs.findPlugin("hilt").get().get().pluginId)
             }
 
             // Configure the LibraryExtension for library modules
