@@ -26,12 +26,12 @@ class SummariseNoteViewModel @Inject constructor(
         if (uiState.noteInput.isBlank()) return
         uiState = uiState.copy(isLoading = true, error = null)
         viewModelScope.launch {
-           /* val result = summariseNote(uiState.noteInput)
+            val result = summariseNote(uiState.noteInput)
             uiState = if (result.isSuccess) {
                 uiState.copy(summary = result.getOrNull(), isLoading = false)
             } else {
                 uiState.copy(error = result.exceptionOrNull()?.message, isLoading = false)
-            }*/
+            }
         }
     }
 }
