@@ -18,3 +18,4 @@ rootProject.name = "SmartNotes"
 include(":app")
 include(":domain")
 include(":data")
+include(":mlkit-genai")

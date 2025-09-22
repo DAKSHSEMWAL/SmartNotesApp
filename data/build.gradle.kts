@@ -6,6 +6,9 @@ plugins {
 
 android {
     namespace =  "${Config.libraryId}.data"
+    defaultConfig {
+        minSdk = Config.minSdkVersion
+    }
 }
 
 dependencies {
@@ -13,4 +16,5 @@ dependencies {
     ksp(libs.hilt.compiler)
 
     implementation(libs.kotlinx.coroutines)
+    implementation(projects.mlkitGenai)
 }

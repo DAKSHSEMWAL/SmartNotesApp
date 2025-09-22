@@ -4,9 +4,9 @@ import org.gradle.api.JavaVersion
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 object Config {
-    const val compileSdkVersion = 35
-    const val targetSdkVersion = 35
-    const val minSdkVersion = 28
+    const val compileSdkVersion = 36
+    const val targetSdkVersion = 36
+    const val minSdkVersion = 26
     val sourceCompatibility = JavaVersion.VERSION_21
     val targetCompatibility = JavaVersion.VERSION_21
     val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

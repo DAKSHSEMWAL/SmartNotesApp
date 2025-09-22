@@ -5,17 +5,23 @@ plugins {
 }
 
 android {
-    namespace = "${Config.libraryId}.domain"
+    namespace = "${Config.libraryId}.mlkit_genai"
     defaultConfig {
         minSdk = Config.minSdkVersion
     }
 }
+
 dependencies {
+    // Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
 
+    // Coroutines
     implementation(libs.kotlinx.coroutines)
 
-    implementation(projects.data)
+    // ML Kit GenAI Summarization
+    implementation(libs.genai.summarization)
 
+    // For ListenableFuture<T>.await()
+    implementation(libs.kotlinx.coroutines.guava)
 }
